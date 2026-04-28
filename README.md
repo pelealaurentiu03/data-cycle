@@ -13,7 +13,7 @@ Coming from an economics background and transitioning into Big Data, I wanted to
 ## Machine Learning & Visualization
 
 * Forecasting Models: Using the structured historical data, I conducted exploratory data analysis and trained Random Forest regressors in Jupyter Notebooks to predict power consumption and room occupation trends.
-* Business Intelligence: I designed a comprehensive Power BI dashboard connected to the Gold layer, providing interactive KPIs and actionable insights for stakeholders.
+* Business Intelligence: I designed a comprehensive Power BI dashboard connected to the Gold layer, providing interactive KPIs and actionable insights for stakeholders. Note: Due to GitHub file size constraints for the interactive .pbix file (28 MB), comprehensive screenshots and dashboard previews are included in the project documentation.
 
 ## Technical Stack
 
@@ -24,12 +24,14 @@ Coming from an economics background and transitioning into Big Data, I wanted to
 
 ## Repository Structure
 
-* /src - Contains the Python modules separated by pipeline stage (Extract, Clean, Load, Forecast).
-* /notebooks - Jupyter notebooks detailing the model training and evaluation process.
-* /sql - Database schemas and relevant queries.
-* /dashboard - The final Power BI report file.
-* /docs - Technical documentation, manuals, and project presentations.
+* /Extract - Python scripts for fetching raw sensor and weather data via APIs.
+* /Clean - Data transformation, cleaning, and formatting scripts.
+* /Load & /GoldStorage/Scripts - Scripts dedicated to loading the processed data into the database architecture.
+* /Training - Jupyter notebooks detailing the exploratory data analysis and ML model training process.
+* /Forecasts - Deployment scripts for running the trained predictive models.
+* /Docs - Technical documentation, manuals, presentations, and visual previews of the Power BI dashboard.
+* Apartment.sql - The complete database schema and table creation queries.
 
 ## Note on Running Locally
 
-For security and privacy reasons, all database credentials, API keys, and sensitive configuration files (such as `config.ini` and `setup_credentials.py`) have been excluded from this public repository. To run these scripts locally, you must configure your own local environment variables.
+For security and privacy reasons, all database credentials, API keys, and sensitive configuration files (such as config.ini and setup_credentials.py) have been excluded from this public repository via .gitignore. To run these scripts locally, you must configure your own local environment variables.
